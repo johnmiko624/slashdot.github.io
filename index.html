@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slashdot Replica</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .container {
+            width: 98%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+        }
+        header {
+            background-color: #006666;
+            padding: 10px;
+            text-align: left;
+            color: white;
+            border-bottom: 4px solid #005050;
+        }
+        header img {
+            vertical-align: middle;
+            margin-right: 15px;
+            height: 50px;
+        }
+        header nav {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 20px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid #cccccc;
+        }
+        .main-content table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        .main-content table th, .main-content table td {
+            padding: 10px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .main-content table th {
+            background-color: #006666;
+            color: white;
+            text-align: left;
+        }
+        .main-content table td {
+            vertical-align: top;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .article-content {
+            flex: 1;
+        }
+        .article-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #006666;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 15px;
+        }
+        .sidebar-left, .sidebar-right {
+            width: 200px;
+            padding: 15px;
+        }
+        .sidebar-left {
+            border-right: 1px solid #cccccc;
+        }
+        .sidebar-right {
+            border-left: 1px solid #cccccc;
+        }
+        .sidebar-left ul, .sidebar-right ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar-left ul li, .sidebar-right ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar-left ul li a, .sidebar-right ul li a {
+            text-decoration: none;
+            color: #006666;
+        }
+        .sidebar-left ul li a:hover, .sidebar-right ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #006666;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.jpg" alt="Slashdot Logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Topics</a>
+                <a href="#">Archives</a>
+                <a href="#">Search</a>
+                <a href="#">Submit</a>
+                <a href="#">About</a>
+                <a href="#">Login</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="sidebar-left">
+                <ul>
+                    <li><a href="#">Today's Headlines</a></li>
+                    <li><a href="#">Older Stories</a></li>
+                    <li><a href="#">Discussion</a></li>
+                    <li><a href="#">Polls</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Interviews</a></li>
+                    <li><a href="#">Book Reviews</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <table>
+                    <tr>
+                        <th>News Article 1</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="article-content">
+                                <strong>Posted by:</strong> Reporter | <strong>Date:</strong> Sep 22, 2024 12:00 PM
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+                                <p><a href="#">Read more...</a></p>
+                            </div>
+                            <div class="article-logo">1</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>News Article 2</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="article-content">
+                                <strong>Posted by:</strong> Editor | <strong>Date:</strong> Sep 21, 2024 10:30 AM
+                                <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris...</p>
+                                <p><a href="#">Read more...</a></p>
+                            </div>
+                            <div class="article-logo">2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>News Article 3</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="article-content">
+                                <strong>Posted by:</strong> Tech Guru | <strong>Date:</strong> Sep 20, 2024 09:00 AM
+                                <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla...</p>
+                                <p><a href="#">Read more...</a></p>
+                            </div>
+                            <div class="article-logo">3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>News Article 4</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="article-content">
+                                <strong>Posted by:</strong> Analyst | <strong>Date:</strong> Sep 19, 2024 03:45 PM
+                                <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh...</p>
+                                <p><a href="#">Read more...</a></p>
+                            </div>
+                            <div class="article-logo">4</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sidebar-right">
+                <ul>
+                    <li><a href="#">Editor's Picks</a></li>
+                    <li><a href="#">Top Stories</a></li>
+                    <li><a href="#">Trending Articles</a></li>
+                    <li><a href="#">Sponsored Links</a></li>
+                    <li><a href="#">Tech News</a></li>
+                    <li><a href="#">Developer Forums</a></li>
+                    <li><a href="#">Cybersecurity</a></li>
+                    <li><a href="#">Gadget Reviews</a></li>
+                    <li><a href="#">Science News</a></li>
+                    <li><a href="#">Startups</a></li>
+                    <li><a href="#">Tech Support</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Productivity</a></li>
+                    <li><a href="#">Open Source Projects</a></li>
+                    <li><a href="#">Blockchain</a></li>
+                    <li><a href="#">Cryptocurrency</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">Big Data</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Robotics</a></li>
+                    <li><a href="#">Gaming Industry</a></li>
+                    <li><a href="#">Developer Conferences</a></li>
+                    <li><a href="#">Cloud Computing</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Gadget News</a></li>
+                    <li><a href="#">Tech Deals</a></li>
+                    <li><a href="#">Career Advice</a></li>
+                    <li><a href="#">Programming Languages</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Slashdot Replica. school purpose only.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
